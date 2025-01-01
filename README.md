@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/restarting-at-frontend-with-social-links-profile-media-ggeYwicZ5c)
+- Live Site URL: [Add live site URL here](https://social-links-profile-media.vercel.app/)
 
 ## My process
 
@@ -57,7 +57,7 @@ I feel that I need a better understanding on how sizes and some flex and grid pr
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@LeonCelestino](https://www.frontendmentor.io/profile/LeonCelestino)
 
 ## Acknowledgments
 
