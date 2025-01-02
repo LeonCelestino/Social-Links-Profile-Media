@@ -1,27 +1,93 @@
-.about-me, .poster {
+/* Variables */
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+/* Reset and global */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    
+    line-height: 1.5;
+    
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", serif;
+
+    background: var(--grey-900);
+  }
+  
+ 
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*  Profile */
+
+.profile, .poster {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
 }
 
-.about-me {
+.profile {
     padding: 1rem;
-    gap: 1rem;
-
-    min-height: 100vh;
-       
+    min-height: 95vh;
 }
 
 .poster {
     width: min(25rem, 100%);
     padding: 1.2rem;
+    gap: 1.5rem;
     border-radius: .7rem;
+    
     background: var(--grey-800);
 
     text-align: center;
 }
+
 
 .pfp-wrap {
     max-width: 5rem;
@@ -31,12 +97,39 @@
     border-radius: 50%;
 }
 
+
+.introduction {
+    display: grid;
+    gap: .2rem;
+}
+
+.location {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--green);
+}
+
+
+.name, .sm-link, .quote {
+    color: var(--white);
+}
+
+.quote {
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+
 .links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     
     width: 100%;
+}
+
+.links li {
+    list-style-type: none;
 }
 
 .sm-link {
@@ -49,31 +142,12 @@
 
 }
 
-.sm-link:hover, sm-link:active {
+.sm-link:hover, .sm-link:active {
     font-weight: 700;
     color: var(--grey-700);
     background-color: var(--green);
 }
 
-.quote {
-    font-size: .8rem;
-    font-weight: 200;
-}
-
-.introduction {
-    display: grid;
-    gap: .2rem;
-}
-
-.name, .sm-link, .quote {
-    color: var(--white);
-}
-
-.location {
-    font-size: .9rem;
-    font-weight: 600;
-    color: var(--green);
-}
 
 .attribution {
     font-size: 11px; text-align: center;
@@ -81,9 +155,11 @@
 }
 
 .attribution a {
+    font-weight: 700;
     color: hsl(228, 55%, 74%);
+    text-decoration: underline;
 }
 
 .attribution a:hover, .attribution a:active {
-    text-decoration: underline;
+    text-decoration: none;
 }
