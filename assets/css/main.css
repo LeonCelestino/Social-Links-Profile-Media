@@ -89,11 +89,8 @@
 }
 
 
-.pfp-wrap {
+.profile-img {
     max-width: 5rem;
-}
-
-.pfp-wrap img {
     border-radius: 50%;
 }
 
